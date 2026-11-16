@@ -1,47 +1,23 @@
-# Component Name
+# Audacity
 
-Component description.
+Audacity is a SigmaOS component providing a functional domain model for `audacity2` with validated state, deterministic storage, and typed errors.
 
-## Overview
+## Description
 
-This component provides $app_name compatibility for SigmaOS.
+Audacity audio editor compatibility layer for SigmaOS
 
-## Features
+## Domain model
 
-- Feature 1
-- Feature 2
+- `AudioEditor` — domain entity
 
-## Usage
+## API
 
-```rust
-use sigmaos_app::Application;
-
-#[tokio::main]
-async fn main() -> anyhow::Result<()> {
-    let mut app = Application::new()?;
-    app.init().await?;
-    Ok(())
-}
-```
-
-## Building
-
-```bash
-cargo build --release
-```
+- `new()`
 
 ## Testing
 
-```bash
+```sh
 cargo test
 ```
 
-## License
-
-MIT License - see LICENSE file for details
-
-## Inspiration
-
-- $app_name application
-- creative tools
-- multimedia
+Tests are deterministic, isolated, and self-validating.
