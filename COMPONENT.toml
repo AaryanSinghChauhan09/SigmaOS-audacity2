@@ -3,7 +3,7 @@ name = "SigmaOS-audacity2"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "audacity2 component"
+description = "Audacity audio editor compatibility layer for SigmaOS"
 upstream = []
 
 [contract]
